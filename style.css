@@ -79,6 +79,40 @@ body {
   display: none;
 }
 
+/*navbar search form*/
+
+.navbar .search-form{
+    transform: scaleY(0);
+    transform-origin: top;
+    position: absolute;
+    top: 100%;
+    right: 7%;
+    background-color: white;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.navbar .search-form.active{
+    transform: scaleY(1);
+}
+
+.navbar .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--bg);
+    padding: 1rem;
+}
+
+.navbar .search-form label{
+    cursor:pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: var(--bg);
+}
 /*hero section*/
 .hero {
   min-height: 100vh;
@@ -382,6 +416,17 @@ footer .credit a {
   }
   .menu p {
     font-size: 1.2rem;
+  }
+  .contact .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .row .map {
+    height: 30rem;
+  }
+
+  .contact .row form {
+    padding-top: 0;
   }
 }
 /*hp*/
